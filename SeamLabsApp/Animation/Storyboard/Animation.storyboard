@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lbx-4g-unK">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AnimationVC-->
+        <scene sceneID="R3g-lN-F4E">
+            <objects>
+                <viewController id="lbx-4g-unK" customClass="AnimationVC" customModule="SeamLabsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wdP-tf-4mi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UBw-uf-Itg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dq3-hM-sol">
+                                        <rect key="frame" x="0.0" y="202" width="414" height="414"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="dq3-hM-sol" secondAttribute="height" id="ARo-tB-txX"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="dq3-hM-sol" firstAttribute="width" secondItem="UBw-uf-Itg" secondAttribute="width" id="9dp-C7-Rjz"/>
+                                    <constraint firstItem="dq3-hM-sol" firstAttribute="centerX" secondItem="UBw-uf-Itg" secondAttribute="centerX" id="A7g-GW-gxW"/>
+                                    <constraint firstItem="dq3-hM-sol" firstAttribute="centerY" secondItem="UBw-uf-Itg" secondAttribute="centerY" id="v9X-XC-QoJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.2156862745" green="0.2156862745" blue="0.32549019610000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="UBw-uf-Itg" firstAttribute="leading" secondItem="n0o-KM-Nu7" secondAttribute="leading" id="WrF-1b-9GP"/>
+                            <constraint firstItem="n0o-KM-Nu7" firstAttribute="bottom" secondItem="UBw-uf-Itg" secondAttribute="bottom" id="hBo-jl-oDh"/>
+                            <constraint firstItem="n0o-KM-Nu7" firstAttribute="trailing" secondItem="UBw-uf-Itg" secondAttribute="trailing" id="rZV-fb-z3u"/>
+                            <constraint firstItem="UBw-uf-Itg" firstAttribute="top" secondItem="n0o-KM-Nu7" secondAttribute="top" id="tjH-Qt-EYA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="n0o-KM-Nu7"/>
+                    </view>
+                    <connections>
+                        <outlet property="view1" destination="UBw-uf-Itg" id="Pkq-NT-X37"/>
+                        <outlet property="view2" destination="dq3-hM-sol" id="iHs-eC-Nne"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Wy-1w-caz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1635" y="31"/>
+        </scene>
+    </scenes>
+</document>
